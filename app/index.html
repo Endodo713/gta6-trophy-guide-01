@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PS5: names, descriptions, grades, cited guides, checklist, filters, spoiler mode and a roadmap to platinum.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; OFFLINE GUIDE</p>
+    <h1>GTA VI Trophy Guide &amp; Tracker</h1>
+    <p class="sub">All <strong>55 trophies</strong> — 1 platinum, 2 gold, 6 silver, 46 bronze. Every guide is written in our own words and names its source. No online play, no DLC, one playthrough.</p>
+    <div class="progress-wrap">
+      <div class="progress-line"><span id="progressText">0 of 55 earned — 0%</span><span id="toPlat">54 to platinum</span></div>
+      <div class="bar"><div id="barFill" style="width:0%"></div></div>
+      <div class="chips" id="gradeChips"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="panel roadmap" id="roadmap">
+    <h2>Roadmap to Platinum <span class="tagline">about 200 hours &middot; difficulty 4/10 &middot; PowerPyx</span></h2>
+    <ol class="steps">
+      <li><b>1 &middot; Story first (60–80 h)</b><span>Play the chapters in order and finish every named mission. Do the Chapter 1 home meditation the first time it is offered — it is the one possibly missable trophy. Scan vehicles and study animals as you go; progress counts later.</span></li>
+      <li><b>2 &middot; 100% checklist (~100 h)</b><span>After the credits, open Progress &gt; Stats &gt; 100% Completion. Thresholds are lenient (about 60% of true completion). You need 70 of 80 Challenges, so skip the hardest ones.</span></li>
+      <li><b>3 &middot; Strangers &amp; side strands (~10 h)</b><span>Finish 8 stranger strands and the character quests (Andy, Kenton, Billy, Randy, Tyrone, Bret). Most trophies pop automatically by now.</span></li>
+      <li><b>4 &middot; Cleanup</b><span>Grind the counters left over: 250 stunts, 100 WAiNK locations, 100 vehicles, card sets, robberies and money totals. Cheats disable trophies and saving — keep them off.</span></li>
+      <li><b>5 &middot; Platinum</b><span>“Vice Got a Price!” pops the moment the other 54 are earned. There is no mission replay, so play story missions carefully the first time.</span></li>
+    </ol>
+    <p class="missable-callout"><strong>⚠ The one missable to watch:</strong> <strong>Positive Mental Attitude</strong> — meditate at every spot; the first meditation is offered at home in Chapter 1 and may become unavailable after that chapter. Source: PowerPyx GTA 6 Trophy Guide. Every other trophy is confirmed unmissable or not flagged by any published guide.</p>
+  </section>
+
+  <section class="controls panel">
+    <div class="row">
+      <label class="search">Search <input id="q" type="search" placeholder="Trophy, mission or keyword…" autocomplete="off"></label>
+      <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+      <label class="check"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+      <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+    </div>
+    <div class="row chips" id="filters" role="group" aria-label="Filter by group">
+      <button type="button" data-filter="all" class="on">All 55</button>
+      <button type="button" data-filter="story">Story (12)</button>
+      <button type="button" data-filter="side">Side missions (7)</button>
+      <button type="button" data-filter="collectibles">Collectibles (5)</button>
+      <button type="button" data-filter="activities">Activities (8)</button>
+      <button type="button" data-filter="combat">Combat &amp; heists (10)</button>
+      <button type="button" data-filter="money">Money &amp; misc (11)</button>
+      <button type="button" data-filter="missable">⚠ Missable (1)</button>
+      <button type="button" data-filter="remaining">Not yet earned</button>
+    </div>
+    <div class="row tools">
+      <button id="export" type="button">⬇ Export progress (JSON)</button>
+      <label class="import">⬆ Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset checklist</button>
+      <span id="countLine" class="count"></span>
+    </div>
+  </section>
+
+  <section id="detail" class="panel detail" hidden></section>
+
+  <section id="list" class="list" aria-live="polite"></section>
+
+  <footer class="panel foot">
+    <p><strong>How to read this guide.</strong> Trophy names, descriptions and grades follow the verified 55-trophy list (descriptions confirmed against Exophase; names and grades corroborated by PC Gamer, PowerPyx, GTABase and OutputLag). Each guide is original wording and names its source — PowerPyx GTA 6 Trophy Guide, GTABase GTA 6 Trophy Guide, Exophase GTA 6 Trophy List or PC Gamer GTA 6 Trophy List. Where a published guide has not confirmed an unlock yet, the guide says so instead of guessing. Full source links live in SOURCES.md at the repo root. This app works fully offline: progress is saved in your browser (localStorage) and never leaves your device.</p>
+    <p class="fine">Grand Theft Auto VI and GTA are trademarks of Take-Two Interactive. This is an unofficial fan-made guide. Trophy #4 is printed exactly as listed (“T**s Ass Drug Money”) — the uncensored name is not published anywhere checkable.</p>
+  </footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
